@@ -1,0 +1,93 @@
+<section class="screen-content criar-post-screen">
+  <!-- Header Superior -->
+  <header class="post-header-bar">
+    <button class="icon-btn" onclick="navigateTo('home')">
+      <i data-lucide="arrow-left"></i>
+    </button>
+
+    <button class="btn-publish" onclick="submitPost()">
+      Publicar
+    </button>
+  </header>
+
+  <main class="post-form-container">
+    <div class="user-input-row">
+      <div class="star-avatar">
+        <i data-lucide="star"></i>
+      </div>
+      <textarea 
+        class="post-textarea" 
+        id="post-text-input" 
+        placeholder="O que está pensando?" 
+        rows="3"></textarea>
+    </div>
+
+    <div class="poll-box" id="poll-box">
+      <div class="poll-header">
+        <span class="poll-title">Enquete</span>
+        <button class="poll-reset-btn" onclick="togglePollBox()" title="Fechar enquete">
+          <i data-lucide="rotate-ccw"></i>
+        </button>
+      </div>
+
+      <div class="poll-options-list" id="poll-options-list">
+        <div class="poll-option-item">
+          <i data-lucide="image" class="option-icon"></i>
+          <input type="text" value="17/9" class="poll-input" placeholder="Opção 1">
+          <button class="poll-action-btn remove-btn" onclick="removePollOption(this)" title="Remover opção">
+            <i data-lucide="minus-circle"></i>
+          </button>
+        </div>
+
+        <div class="poll-option-item">
+          <i data-lucide="image" class="option-icon"></i>
+          <input type="text" value="16/9" class="poll-input" placeholder="Opção 2">
+          <button class="poll-action-btn remove-btn" onclick="removePollOption(this)" title="Remover opção">
+            <i data-lucide="minus-circle"></i>
+          </button>
+        </div>
+      </div>
+
+      <button class="add-option-row-btn" onclick="addPollOption()">
+        <i data-lucide="plus"></i>
+        <span>Adicionar opção</span>
+      </button>
+    </div>
+
+    <div class="tags-box">
+      <span class="tags-title">Tags</span>
+      <div class="tags-options">
+        <label class="checkbox-label">
+          <input type="checkbox" id="tag-pessoal" checked> #Pessoal
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="tag-evento"> #Evento
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="tag-arrecadacao"> #Arrecadação
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="tag-outro"> #Outro
+        </label>
+      </div>
+    </div>
+  </main>
+
+  <footer class="media-toolbar">
+    <button class="tool-square-btn" title="Anexar Imagem">
+      <i data-lucide="image"></i>
+    </button>
+    <button class="tool-square-btn" title="Câmera">
+      <i data-lucide="camera"></i>
+    </button>
+    <button class="tool-square-btn" title="Áudio">
+      <i data-lucide="mic"></i>
+    </button>
+    <button class="tool-square-btn" title="Adicionar Enquete" onclick="togglePollBox()">
+      <i data-lucide="layout-grid"></i>
+    </button>
+    <button class="tool-square-btn" title="Localização">
+      <i data-lucide="map-pin"></i>
+    </button>
+  </footer>
+</section>

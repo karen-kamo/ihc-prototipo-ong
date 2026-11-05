@@ -1,0 +1,107 @@
+<section class="screen-content home-screen">
+  <header class="home-header">
+    <div class="tabs-nav">
+      <button class="tab-link active">Para você</button>
+      <button class="tab-link">Seguindo</button>
+    </div>
+    <button class="notification-btn" onclick="navigateTo('notificacoes')">
+      <i data-lucide="bell"></i>
+    </button>
+  </header>
+
+  <main class="feed-container">
+    
+    <article class="post-card">
+      <header class="post-header">
+        <div class="post-author">
+          <div class="author-avatar orange-avatar star-avatar">
+            <i data-lucide="star"></i>
+          </div>
+          <span class="author-name">ONG de Anubis</span>
+        </div>
+        <button class="more-btn"><i data-lucide="more-horizontal"></i></button>
+      </header>
+
+      <div class="post-gallery">
+        <div class="gallery-main">
+          <img src="./img/feed1.jpg" alt="Evento Adote" class="gallery-img">
+        </div>
+        <div class="gallery-sidebar">
+          <div class="gallery-sub">
+            <img src="./img/feed2.jpg" alt="Evento de adoção 2" class="gallery-img">
+          </div>
+          <div class="gallery-sub">
+            <img src="./img/feed3.jpg" alt="Evento de adoção 3" class="gallery-img">
+          </div>
+        </div>
+      </div>
+
+      <div class="post-content">
+        <p>
+          Olá, rede! Confira o “Enigmas”, o último evento da nossa ONG, ocorrido no dia 18/10/2026. Fiquem ligados nos próximos eventos.
+        </p>
+        <span class="post-time">1h</span>
+      </div>
+
+      <footer class="post-actions">
+        <div class="action-group">
+          <button class="action-btn"><i data-lucide="heart"></i> <span>543</span></button>
+          <button class="action-btn"><i data-lucide="message-square"></i> <span>34</span></button>
+          <button class="action-btn"><i data-lucide="share-2"></i> <span>44</span></button>
+        </div>
+        <button class="action-btn bookmark-btn"><i data-lucide="bookmark"></i></button>
+      </footer>
+    </article>
+
+    <article class="post-card">
+      <header class="post-header">
+        <div class="post-author">
+          <div class="author-avatar orange-avatar">
+             <i data-lucide="user"></i>
+          </div>
+          <span class="author-name" onclick="navigateTo('perfil')">Luiz Tatracio da Silva</span>
+        </div>
+        <button class="more-btn"><i data-lucide="more-horizontal"></i></button>
+      </header>
+
+      <div class="post-media">
+        <img src="./img/soberaniaFeed.png" alt="Soberania" class="post-img">
+      </div>
+
+      <div class="post-content">
+        <p>
+          Olá, companheiros! Esse é o meu novo cachorro, o Soberania. Resgatei ele de uma enchente. Pensa em um animal bonzinho.
+        </p>
+        <span class="post-time">3h</span>
+      </div>
+
+      <footer class="post-actions">
+        <div class="action-group">
+          <button class="action-btn"><i data-lucide="heart"></i> <span>300</span></button>
+          <button class="action-btn"><i data-lucide="message-square"></i> <span>13</span></button>
+          <button class="action-btn"><i data-lucide="share-2"></i> <span>33</span></button>
+        </div>
+        <button class="action-btn bookmark-btn"><i data-lucide="bookmark"></i></button>
+      </footer>
+    </article>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="nav-item active" onclick="navigateTo('home')">
+      <i data-lucide="home"></i>
+    </button>
+    <button class="nav-item" onclick="navigateTo('comunidade')">
+      <i data-lucide="paw-print"></i>
+    </button>
+    <button class="nav-item btn-add" onclick="openPostModal()">
+      <i data-lucide="plus-circle"></i>
+    </button>
+    <button class="nav-item" onclick="navigateTo('mensagens')">
+      <i data-lucide="message-square"></i>
+    </button>
+    <button class="nav-item" onclick="navigateTo('meu-perfil')">
+      <i data-lucide="user"></i>
+    </button>
+  </nav>
+</section>

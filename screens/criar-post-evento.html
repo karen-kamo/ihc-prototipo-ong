@@ -1,0 +1,80 @@
+<section class="screen-content criar-post-screen">
+  <header class="post-header-bar">
+    <button class="icon-btn" onclick="navigateTo('home')">
+      <i data-lucide="arrow-left"></i>
+    </button>
+
+    <button class="btn-publish" onclick="submitEventoPost()">
+      Publicar
+    </button>
+  </header>
+
+  <main class="evento-form-container">
+    <div class="user-animal-row">
+      <div class="star-avatar">
+        <i data-lucide="star"></i>
+      </div>
+      <div class="animal-type-box">
+        <h3 class="box-title">Anúncio de evento</h3>
+      </div>
+    </div>
+
+    <div class="field-container">
+      <div class="input-field-box">
+        <span class="field-label">Nome/Título:</span>
+        <input type="text" id="event-name-input" class="field-input">
+      </div>
+      <label class="checkbox-sublabel">
+        <input type="checkbox" id="chk-no-title" onchange="toggleEventNameInput(this)"> Não possui/não sabe
+      </label>
+    </div>
+
+    <div class="input-field-box">
+      <span class="field-label">Data:</span>
+      <input type="text" class="field-input">
+    </div>
+
+    <div class="input-field-box">
+      <span class="field-label">Horário de início:</span>
+      <input type="text" class="field-input">
+    </div>
+
+    <div class="field-container">
+      <div class="input-field-box">
+        <span class="field-label">Horário de término:</span>
+        <input type="text" id="event-end-time-input" class="field-input">
+      </div>
+      <label class="checkbox-sublabel">
+        <input type="checkbox" id="chk-no-end-time" onchange="toggleEndTimeInput(this)"> Não possui/não sabe
+      </label>
+    </div>
+
+    <div class="input-field-box">
+      <span class="field-label">Endereço:</span>
+      <input type="text" class="field-input">
+    </div>
+
+    <div class="input-field-box textarea-box">
+      <span class="field-label">Outras informações:</span>
+      <textarea class="field-textarea" rows="3"></textarea>
+    </div>
+  </main>
+
+  <footer class="media-toolbar">
+    <button class="tool-square-btn" title="Anexar Imagem">
+      <i data-lucide="image"></i>
+    </button>
+    <button class="tool-square-btn" title="Câmera">
+      <i data-lucide="camera"></i>
+    </button>
+    <button class="tool-square-btn" title="Áudio">
+      <i data-lucide="mic"></i>
+    </button>
+    <button class="tool-square-btn" title="Enquete">
+      <i data-lucide="layout-grid"></i>
+    </button>
+    <button class="tool-square-btn" title="Localização">
+      <i data-lucide="map-pin"></i>
+    </button>
+  </footer>
+</section>

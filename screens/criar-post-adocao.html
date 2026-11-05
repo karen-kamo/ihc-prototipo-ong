@@ -1,0 +1,94 @@
+<section class="screen-content criar-post-screen">
+  <header class="post-header-bar">
+    <button class="icon-btn" onclick="navigateTo('home')">
+      <i data-lucide="arrow-left"></i>
+    </button>
+
+    <button class="btn-publish" onclick="submitAdocaoPost()">
+      Publicar
+    </button>
+  </header>
+
+  <main class="adocao-form-container">
+    <div class="user-animal-row">
+      <div class="star-avatar">
+        <i data-lucide="star"></i>
+      </div>
+
+      <div class="animal-type-box">
+        <h3 class="box-title">Anúncio de adoção de animal</h3>
+        <div class="checkbox-row">
+          <label class="checkbox-label"><input type="checkbox" name="animal-type"> Cachorro</label>
+          <label class="checkbox-label"><input type="checkbox" name="animal-type"> Gato</label>
+          <label class="checkbox-label"><input type="checkbox" name="animal-type"> Hamster</label>
+          <label class="checkbox-label"><input type="checkbox" name="animal-type"> Outro</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="field-group">
+      <div class="input-field-box">
+        <span class="field-label">Nome:</span>
+        <input type="text" id="pet-name-input" class="field-input">
+      </div>
+      <label class="checkbox-sublabel">
+        <input type="checkbox" id="chk-no-name" onchange="togglePetNameInput(this)"> Não possui/não sabe
+      </label>
+    </div>
+
+    <div class="input-field-box inline-options">
+      <span class="field-label">Porte/Tamanho:</span>
+      <label class="checkbox-label"><input type="checkbox" name="porte"> Pequeno</label>
+      <label class="checkbox-label"><input type="checkbox" name="porte"> Médio</label>
+      <label class="checkbox-label"><input type="checkbox" name="porte"> Grande</label>
+    </div>
+
+    <div class="input-field-box">
+      <span class="field-label">Idade:</span>
+      <input type="text" class="field-input">
+    </div>
+
+    <div class="input-field-box">
+      <span class="field-label">Temperamento:</span>
+      <input type="text" class="field-input">
+    </div>
+
+    <div class="input-field-box select-box">
+      <span class="field-label">Raça</span>
+      <i data-lucide="arrow-down" class="dropdown-icon"></i>
+    </div>
+
+    <div class="input-field-box">
+      <span class="field-label">Localização</span>
+      <input type="text" class="field-input">
+    </div>
+
+    <div class="input-field-box">
+      <span class="field-label">Saúde:</span>
+      <input type="text" class="field-input">
+    </div>
+
+    <div class="input-field-box textarea-box">
+      <span class="field-label">Outras informações:</span>
+      <textarea class="field-textarea" rows="3"></textarea>
+    </div>
+  </main>
+
+  <footer class="media-toolbar">
+    <button class="tool-square-btn" title="Anexar Imagem">
+      <i data-lucide="image"></i>
+    </button>
+    <button class="tool-square-btn" title="Câmera">
+      <i data-lucide="camera"></i>
+    </button>
+    <button class="tool-square-btn" title="Áudio">
+      <i data-lucide="mic"></i>
+    </button>
+    <button class="tool-square-btn" title="Enquete">
+      <i data-lucide="layout-grid"></i>
+    </button>
+    <button class="tool-square-btn" title="Localização">
+      <i data-lucide="map-pin"></i>
+    </button>
+  </footer>
+</section>

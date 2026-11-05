@@ -1,0 +1,73 @@
+<section class="screen-content chat-screen chat-usuario-view">
+  <header class="chat-header">
+    <button class="icon-btn" onclick="navigateTo('mensagens')">
+      <i data-lucide="arrow-left"></i>
+    </button>
+
+    <div class="chat-user-info">
+      <div class="user-avatar purple-avatar">
+        <i data-lucide="user"></i>
+      </div>
+      <h2 class="chat-user-name">Marina Diamandis</h2>
+    </div>
+
+    <button class="call-btn">
+      <i data-lucide="phone"></i>
+    </button>
+  </header>
+
+  <main class="chat-messages-container">
+
+    <!-- Card de Anexo Recebido do Usuário  -->
+    <div class="message-bubble incoming attachment-bubble">
+      <div class="attachment-media">
+        <img src="../img/felicia.jpg" alt="Felicia" class="attachment-img">
+      </div>
+      <p class="attachment-text">
+        Tenho interesse nesse animal: Felicia.
+      </p>
+    </div>
+
+    <!-- Respostas Enviadas pela ONG -->
+    <div class="message-bubble outgoing">
+      Oi. A Felicia é um amor!
+    </div>
+
+    <div class="message-bubble outgoing">
+      Ela ainda está disponível para adoção.
+    </div>
+
+    <!-- Pergunta Recebida do Usuário  -->
+    <div class="message-bubble incoming">
+      Que ótimo! Quando posso ir conhecer a ONG e a Felicia?
+    </div>
+
+    <!-- Respostas Enviadas pela ONG -->
+    <div class="message-bubble outgoing">
+      Está disponível amanhã?
+    </div>
+
+    <div class="message-bubble outgoing">
+      Abrimos as 09 horas e vamos até as 15:00
+    </div>
+
+  </main>
+
+  <footer class="chat-input-bar">
+    <div class="input-field-wrapper">
+      <input type="text" placeholder="Mensagem" class="chat-input">
+    </div>
+
+    <div class="input-actions">
+      <button class="action-square-btn" title="Anexar arquivo">
+        <i data-lucide="file-text"></i>
+      </button>
+      <button class="action-square-btn" title="Câmera">
+        <i data-lucide="camera"></i>
+      </button>
+      <button class="action-square-btn" title="Áudio">
+        <i data-lucide="mic"></i>
+      </button>
+    </div>
+  </footer>
+</section>

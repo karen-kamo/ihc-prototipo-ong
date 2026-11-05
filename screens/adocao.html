@@ -1,0 +1,140 @@
+<section class="screen-content adocao-screen">
+  <header class="adocao-header">
+    <button class="icon-btn" onclick="navigateTo('comunidade')">
+      <i data-lucide="arrow-left"></i>
+    </button>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i data-lucide="sliders-horizontal" class="search-filter-icon"></i>
+        <input type="text" placeholder="Buscar" class="search-input">
+      </div>
+      <button class="filter-btn" id="btn-toggle-filter" onclick="toggleFilterPanel()">
+        <i data-lucide="filter"></i>
+        <span id="filter-btn-text">Filtrar</span>
+        <span class="filter-badge" id="filter-badge"></span>
+      </button>
+    </div>
+  </header>
+
+<div class="filter-panel" id="filter-panel">
+  <div class="filter-group">
+    <span class="filter-label">Animal:</span>
+    <label class="checkbox-label"><input type="checkbox" value="cachorro" onchange="aplicarFiltros()"> Cachorro</label>
+    <label class="checkbox-label"><input type="checkbox" value="gato" onchange="aplicarFiltros()"> Gato</label>
+    <label class="checkbox-label"><input type="checkbox" value="outros" onchange="aplicarFiltros()"> Outros</label>
+    <button class="reset-filter-btn" title="Limpar Filtros" onclick="limparFiltros()"><i data-lucide="rotate-ccw"></i></button>
+  </div>
+
+  <div class="filter-group">
+    <span class="filter-label">Porte/tamanho:</span>
+    <label class="checkbox-label"><input type="checkbox" value="pequeno" onchange="aplicarFiltros()"> Pequeno</label>
+    <label class="checkbox-label"><input type="checkbox" value="medio" onchange="aplicarFiltros()"> Médio</label>
+    <label class="checkbox-label"><input type="checkbox" value="grande" onchange="aplicarFiltros()"> Grande</label>
+  </div>
+
+  <div class="filter-group">
+    <span class="filter-label">Sexo:</span>
+    <label class="checkbox-label"><input type="checkbox" value="macho" onchange="aplicarFiltros()"> Macho</label>
+    <label class="checkbox-label"><input type="checkbox" value="fêmea" onchange="aplicarFiltros()"> Fêmea</label>
+  </div>
+
+  <div class="filter-group vertical">
+    <span class="filter-label">Idade:</span>
+    <div class="options-grid">
+      <label class="checkbox-label"><input type="checkbox" value="1" onchange="aplicarFiltros()"> Menos de 1 ano</label>
+      <label class="checkbox-label"><input type="checkbox" value="3" onchange="aplicarFiltros()"> Menos de 3 anos</label>
+      <label class="checkbox-label"><input type="checkbox" value="6" onchange="aplicarFiltros()"> Menos de 6 anos</label>
+      <label class="checkbox-label"><input type="checkbox" value="9" onchange="aplicarFiltros()"> Menos de 9 anos</label>
+    </div>
+  </div>
+</div>
+
+  <main class="adocao-container">
+    <article class="pet-card expandable-card" id="card-felicia" onclick="toggleCardDetails('card-felicia')"
+    data-animal="cachorro" data-tamanho="grande" data-sexo="fêmea" data-idade="3">
+      <header class="post-header">
+        <div class="post-author">
+          <div class="author-avatar star-avatar"><i data-lucide="star"></i></div>
+          <span class="author-name">ONG da Tetra Estrela Guia</span>
+        </div>
+        <button class="more-btn" onclick="event.stopPropagation()"><i data-lucide="more-horizontal"></i></button>
+      </header>
+
+      <div class="pet-media">
+        <img src="../img/felicia.jpg" alt="Felicia" class="pet-img">
+        <button class="carousel-next-btn" onclick="event.stopPropagation()">
+          <i data-lucide="arrow-right-circle"></i>
+        </button>
+      </div>
+
+      <div class="pet-info">
+        <p class="info-line"><strong>Nome:</strong> Felicia</p>
+        <p class="info-line"><strong>Porte/Tamanho:</strong> Grande</p>
+        <p class="info-line"><strong>Idade:</strong> 3 anos</p>
+
+        <!-- Detalhes exibidos ao expandir -->
+        <div class="extra-details">
+          <p class="info-line"><strong>Temperamento:</strong> Tranquilo</p>
+          <p class="info-line"><strong>Raça:</strong> Sem raça definida (SRD)</p>
+          <p class="info-line"><strong>Localização:</strong> São Carlos - SP</p>
+          <p class="info-line"><strong>Saúde:</strong> Saudável</p>
+          <p class="info-line"><strong>Outras informações:</strong> Chegou à ONG três semanas atrás, com uma ferida na pata traseira. Foi feita a medicação adequada e o curativo. Agora, ela já está bem, cheirosa e pronta para um novo lar.</p>
+        </div>
+
+        <!-- Botões de ação exibidos ao expandir -->
+        <div class="card-expanded-actions" onclick="event.stopPropagation()">
+          <button class="btn-square-action" title="Compartilhar" onclick="navigateTo('mensagens')">
+            <i data-lucide="share-2"></i>
+          </button>
+          <button class="btn-square-action" title="Salvar">
+            <i data-lucide="bookmark"></i>
+          </button>
+        </div>
+
+        <span class="post-time">1h</span>
+      </div>
+    </article>    
+
+    <article class="pet-card expandable-card" id="card-linda" onclick="toggleCardDetails('card-linda')"
+    data-animal="cachorro" data-tamanho="grande" data-sexo="fêmea" data-idade="2">
+      <header class="post-header">
+        <div class="post-author">
+          <div class="author-avatar triangle-avatar"><i data-lucide="triangle"></i></div>
+          <span class="author-name">ONG de Anubis</span>
+        </div>
+        <button class="more-btn" onclick="event.stopPropagation()"><i data-lucide="more-horizontal"></i></button>
+      </header>
+
+      <div class="pet-media">
+        <img src="../img/adocao1.jpg" alt="Linda" class="pet-img">
+        <button class="carousel-next-btn" onclick="event.stopPropagation()">
+          <i data-lucide="arrow-right-circle"></i>
+        </button>
+      </div>
+
+      <div class="pet-info">
+        <p class="info-line"><strong>Nome:</strong> Linda</p>
+        <p class="info-line"><strong>Porte/Tamanho:</strong> Grande</p>
+        <p class="info-line"><strong>Idade:</strong> 2 anos</p>
+
+        <div class="extra-details">
+          <p class="info-line"><strong>Temperamento:</strong> Dócil e dócil</p>
+          <p class="info-line"><strong>Raça:</strong> Sem raça definida (SRD)</p>
+          <p class="info-line"><strong>Localização:</strong> São Carlos - SP</p>
+          <p class="info-line"><strong>Saúde:</strong> Castrada e vacinada</p>
+        </div>
+
+        <div class="card-expanded-actions" onclick="event.stopPropagation()">
+          <button class="btn-square-action" title="Compartilhar" onclick="navigateTo('mensagens')">
+            <i data-lucide="share-2"></i>
+          </button>
+          <button class="btn-square-action" title="Salvar">
+            <i data-lucide="bookmark"></i>
+          </button>
+        </div>
+
+        <span class="post-time">10 min</span>
+      </div>
+    </article>
+  </main>
+</section>

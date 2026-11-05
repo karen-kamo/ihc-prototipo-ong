@@ -1,0 +1,119 @@
+<section class="screen-content eventos-screen">
+  <header class="eventos-header">
+    <button class="icon-btn" onclick="navigateTo('comunidade')">
+      <i data-lucide="arrow-left"></i>
+    </button>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i data-lucide="sliders-horizontal" class="search-filter-icon"></i>
+        <input type="text" placeholder="Buscar" class="search-input">
+      </div>
+      <button class="filter-btn">
+        <i data-lucide="filter"></i>
+        <span>Filtrar</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="eventos-container">
+
+    <article class="event-card" id="event-aumoco">
+      <header class="post-header">
+        <div class="post-author">
+          <div class="author-avatar orange-avatar"><i data-lucide="star"></i></div>
+          <span class="author-name">ONG da Tetra Estrela Guia</span>
+        </div>
+        <button class="more-btn"><i data-lucide="more-horizontal"></i></button>
+      </header>
+
+      <div class="event-media">
+        <img src="../img/eventoCao.png" alt="AUmoço Legal" class="event-img">
+      </div>
+
+      <div class="event-info">
+        <p class="event-description">Venha prestigiar o nosso "AUmoço Legal", uma feira com o objetivo de promover a adoção responsável e arrecadar fundos para a ONG com venda de comidas diversas.</p>
+        
+        <div class="event-details">
+          <p><strong>Dia:</strong> 28/11/26</p>
+          <p><strong>Horário:</strong> das 11 às 15:00</p>
+          <p><strong>Endereço:</strong> Rua 25 de Outubro, 13, Ocean</p>
+        </div>
+
+        <div class="event-actions">
+          <div class="btn-group-left">
+            <button class="btn-icon-action"><i data-lucide="share-2" onclick="navigateTo('mensagens')"></i></button>
+            <button class="btn-icon-action"><i data-lucide="bookmark"></i></button>
+            <button class="btn-icon-action btn-friends" id="btn-show-friends" onclick="toggleFriendsPanel('event-aumoco')" title="Ver Amigos">
+              <i data-lucide="users"></i>
+            </button>
+          </div>
+          <span class="post-time">1h</span>
+        </div>
+
+        <div class="friends-panel" id="friends-panel">
+          <h4 class="friends-panel-title">Seus amigos que vão no evento</h4>
+          <div class="friends-list">
+            <div class="friend-item">
+              <div class="friend-avatar orange-avatar"><i data-lucide="user"></i></div>
+              <span class="friend-name">Luiz Tatracio da Silva</span>
+            </div>
+            <div class="friend-item">
+              <div class="friend-avatar green-avatar"><i data-lucide="tree-pine"></i></div>
+              <span class="friend-name">Nataly Neri</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="event-card" id="event-enigmas">
+      <header class="post-header">
+        <div class="post-author">
+          <div class="author-avatar triangle-avatar"><i data-lucide="triangle"></i></div>
+          <span class="author-name">ONG de Anubis</span>
+        </div>
+        <button class="more-btn"><i data-lucide="more-horizontal"></i></button>
+      </header>
+
+      <div class="event-media">
+        <img src="../img/eventoGato.png" alt="Enigmas ONG de Anubis" class="event-img">
+      </div>
+
+      <div class="event-info">
+        <p class="event-description">Participe do nosso evento "Enigmas", uma noite cheia de mistérios e diversão para arrecadar fundos para os gatinhos da ONG!</p>
+        
+        <div class="event-details">
+          <p><strong>Dia:</strong> 21/11/2026</p>
+          <p><strong>Horário:</strong> das 17:00 às 22:00</p>
+          <p><strong>Endereço:</strong> Rua Cleópatra, 241, Vila Antiga</p>
+        </div>
+
+        <div class="event-actions">
+          <div class="btn-group-left">
+            <button class="btn-icon-action"><i data-lucide="share-2" onclick="navigateTo('mensagens')"></i></button>
+            <button class="btn-icon-action"><i data-lucide="bookmark"></i></button>
+            <button class="btn-icon-action btn-friends" id="btn-show-friends-enigmas" onclick="toggleFriendsPanel('event-enigmas')" title="Ver Amigos">
+              <i data-lucide="users"></i>
+            </button>
+          </div>
+          <span class="post-time">3h</span>
+        </div>
+
+        <div class="friends-panel" id="friends-panel-enigmas">
+          <h4 class="friends-panel-title">Seus amigos que vão no evento</h4>
+          <div class="friends-list">
+            <div class="friend-item">
+              <div class="friend-avatar orange-avatar"><i data-lucide="user"></i></div>
+              <span class="friend-name">Luiz Tatracio da Silva</span>
+            </div>
+            <div class="friend-item">
+              <div class="friend-avatar green-avatar"><i data-lucide="tree-pine"></i></div>
+              <span class="friend-name">Nataly Neri</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </main>
+</section>

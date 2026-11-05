@@ -1,0 +1,304 @@
+.eventos-screen {
+  background-color: #f7f4f2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.eventos-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 16px 12px 16px;
+  background-color: #f7f4f2;
+}
+
+.eventos-header .icon-btn {
+  background: none;
+  border: none;
+  color: #cb789b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.eventos-header .icon-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.eventos-screen .search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #cb789b;
+  border-radius: 12px;
+  padding: 8px 12px;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+.eventos-screen .search-filter-icon {
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.eventos-screen .search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+}
+
+.eventos-screen .search-input::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.eventos-screen .filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #cb789b;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #cb789b;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.filter-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.eventos-container {
+  padding: 12px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.event-card {
+  background-color: #dedede;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.author-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-avatar svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.triangle-avatar {
+  background-color: #7b7829;
+  color: #eae449;
+}
+
+.author-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.more-btn {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.event-media {
+  width: 100%;
+  height: 190px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ccc;
+  margin-bottom: 10px;
+}
+
+.event-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-info {
+  font-size: 13px;
+  color: #222222;
+  line-height: 1.4;
+}
+
+.event-description {
+  margin-bottom: 10px;
+}
+
+.event-details p {
+  margin-bottom: 2px;
+}
+
+.event-details strong {
+  font-weight: 600;
+}
+
+.event-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 12px;
+}
+
+.btn-group-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-icon-action {
+  background-color: #cb789b;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-icon-action svg {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-friends {
+  display: none;
+}
+
+.event-card.presence-confirmed .btn-friends {
+  display: flex;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #cb789b;
+}
+
+.friends-panel {
+  display: none;
+  background-color: #d182a3; 
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 10px;
+  color: #222222;
+}
+
+.event-card.show-friends .friends-panel {
+  display: block;
+}
+
+.friends-panel-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.friends-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.friend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.friend-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.friend-avatar svg {
+  width: 16px;
+  height: 16px;
+}
+
+.orange-avatar {
+  background-color: #e45834;
+}
+
+.green-avatar {
+  background-color: #5b8744;
+}
+
+.friend-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
+}

@@ -1,0 +1,151 @@
+.cadastro-usuario-screen {
+  background-color: #e86142;
+  color: #ffffff;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.cadastro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 24px 20px 0 20px;
+  position: relative;
+  text-align: center;
+}
+
+.cadastro-pattern {
+  width: 100%;
+  height: 80px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.pattern-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cadastro-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  margin-top: auto;
+  margin-bottom: auto;
+  gap: 24px;
+}
+
+.cadastro-title-box {
+  width: 100%;
+  max-width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.cadastro-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  background-color: #a6361f;
+  border: none;
+  border-radius: 16px;
+  padding: 12px 18px;
+  color: #ffffff;
+  font-size: 13px;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.terms-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  font-size: 11px;
+}
+
+.terms-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.terms-checkbox-label a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.form-button-group {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.btn-step {
+  flex: 1;
+  background-color: #f7f4f2;
+  color: #e85a3c;
+  border: none;
+  padding: 10px 0;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.btn-step:active {
+  transform: scale(0.97);
+}
+
+.cadastro-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  z-index: 2;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+  opacity: 1;
+}

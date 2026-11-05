@@ -1,0 +1,52 @@
+<section class="screen-content cadastro-usuario-screen">
+  <div class="cadastro-container">
+    
+    <div class="cadastro-pattern top-pattern">
+      <img src="../img/detalhesInicial1.png" alt="Desenhos de patinhas e gatos" class="pattern-img">
+    </div>
+
+    <div class="cadastro-center">
+      <div class="cadastro-title-box">
+        <img src="../img/novaConta.png" alt="NOVA CONTA" class="title-img">
+      </div>
+
+      <form class="cadastro-form" onsubmit="event.preventDefault(); navigateTo('home');">
+        <div class="input-group">
+          <input type="text" placeholder="Telefone para contato" required class="form-input">
+        </div>
+
+        <div class="input-group">
+          <input type="email" placeholder="E-mail" required class="form-input">
+        </div>
+
+        <div class="input-group">
+          <input type="password" placeholder="Senha" required class="form-input">
+        </div>
+
+        <div class="input-group">
+          <input type="password" placeholder="Confirmar senha" required class="form-input">
+        </div>
+
+        <div class="form-button-group">
+          <button type="button" class="btn-step btn-secondary" onclick="navigateTo('cadastro-usuario')">
+            Voltar
+          </button>
+          <button type="submit" class="btn-step btn-primary">
+            Criar conta
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="cadastro-footer">
+      <button class="link-btn" onclick="navigateTo('login')">
+        Já tenho uma conta
+      </button>
+
+      <div class="cadastro-pattern bottom-pattern">
+        <img src="../img/detalhesInicial2.png" alt="Desenhos de patinhas e gatos" class="pattern-img">
+      </div>
+    </div>
+
+  </div>
+</section>

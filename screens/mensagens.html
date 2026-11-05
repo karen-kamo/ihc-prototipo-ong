@@ -1,0 +1,107 @@
+<section class="screen-content mensagens-screen">
+  <header class="mensagens-header">
+    <div class="search-bar">
+      <i data-lucide="sliders-horizontal" class="search-filter-icon"></i>
+      <input type="text" placeholder="Buscar" class="search-input">
+    </div>
+
+    <button class="btn-novo-grupo" onclick="navigateTo('novo-grupo')">
+      Novo grupo
+    </button>
+  </header>
+
+  <main class="conversas-container">
+
+    <div class="conversa-item unread" onclick="navigateTo('chat-usuario')">
+      <div class="avatar-box purple-bg">
+        <i data-lucide="user"></i>
+      </div>
+      
+      <div class="conversa-info">
+        <div class="conversa-header">
+          <h3 class="user-name">Marina Diamandis</h3>
+        </div>
+        <p class="last-message">
+          Enviou uma mensagem <span class="bullet">•</span> <span class="time">2 min</span>
+        </p>
+      </div>
+      <span class="unread-dot"></span>
+    </div>
+
+    <div class="conversa-item unread" onclick="navigateTo('chat-luiz')">
+      <div class="avatar-box orange-bg">
+        <i data-lucide="user"></i>
+      </div>
+      <div class="conversa-info">
+        <div class="conversa-header">
+          <h3 class="user-name">Luiz Tatracio da Silva</h3>
+        </div>
+        <p class="last-message">
+          Tem interesse nesse animal: Farinha <span class="bullet">•</span> <span class="time">1d</span>
+        </p>
+      </div>
+      <span class="unread-dot"></span>
+    </div>
+
+    <div class="conversa-item" onclick="navigateTo('chat-nataly')">
+      <div class="avatar-box green-bg">
+        <i data-lucide="tree-pine"></i>
+      </div>
+      <div class="conversa-info">
+        <div class="conversa-header">
+          <h3 class="user-name">Nataly Neri</h3>
+        </div>
+        <p class="last-message">
+          Olá! Sim, ela ainda está disponível <span class="bullet">•</span> <span class="time">1h</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="conversa-item" onclick="navigateTo('chat-victoria')">
+      <div class="avatar-box teal-bg">
+        <i data-lucide="mic"></i>
+      </div>
+      <div class="conversa-info">
+        <div class="conversa-header">
+          <h3 class="user-name">Victoria Beverley</h3>
+        </div>
+        <p class="last-message">
+          não cuidar dos animais é ilegal <span class="bullet">•</span> <span class="time">3h</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="conversa-item" onclick="navigateTo('chat-pikachu')">
+      <div class="avatar-box yellow-bg">
+        <i data-lucide="smile"></i>
+      </div>
+      <div class="conversa-info">
+        <div class="conversa-header">
+          <h3 class="user-name">Pikachu Pallet</h3>
+        </div>
+        <p class="last-message">
+          pikapi pikaaa pikachu pikapi <span class="bullet">•</span> <span class="time">1d</span>
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="nav-item" onclick="navigateTo('home')">
+      <i data-lucide="home"></i>
+    </button>
+    <button class="nav-item" onclick="navigateTo('comunidade')">
+      <i data-lucide="paw-print"></i>
+    </button>
+    <button class="nav-item btn-add" onclick="openPostModal()">
+      <i data-lucide="plus-circle"></i>
+    </button>
+    <button class="nav-item active" onclick="navigateTo('mensagens')">
+      <i data-lucide="message-square"></i>
+    </button>
+    <button class="nav-item" onclick="navigateTo('meu-perfil')">
+      <i data-lucide="user"></i>
+    </button>
+  </nav>
+</section>

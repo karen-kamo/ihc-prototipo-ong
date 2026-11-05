@@ -1,0 +1,72 @@
+<section class="screen-content cadastro-usuario-screen">
+  <div class="cadastro-container">
+    
+    <div class="cadastro-pattern top-pattern">
+      <img src="../img/detalhesInicial1.png" alt="Desenhos de patinhas e gatos" class="pattern-img">
+    </div>
+
+    <div class="cadastro-center">
+      <div class="cadastro-title-box">
+        <img src="../img/novaConta.png" alt="NOVA CONTA" class="title-img">
+      </div>
+
+      <form class="cadastro-form" onsubmit="event.preventDefault(); navigateTo('cadastro-usuario-etapa2');">
+        <div class="input-group">
+          <input type="text" placeholder="Nome da ONG" required class="form-input">
+        </div>
+
+        <div class="input-group">
+          <input type="text" placeholder="Nome de usuário" required class="form-input">
+        </div>
+
+        <div class="input-group">
+          <input type="text" placeholder="Data de fundação" required class="form-input">
+        </div>
+
+        <div class="document-row">
+          <div class="doc-checkboxes">
+            <label class="doc-checkbox-label">
+              <input type="checkbox" name="doc-type" id="chk-rg"> CNPJ
+            </label>
+            <label class="doc-checkbox-label">
+              <input type="checkbox" name="doc-type" id="chk-cpf" checked> RCPJ
+            </label>
+          </div>
+          <div class="doc-input-wrapper">
+            <input type="text" placeholder="Documento" required class="form-input">
+          </div>
+        </div>
+
+        <!-- Área de Upload de Documento -->
+        <div class="upload-box">
+          <input type="file" id="doc-upload-file" class="file-input-hidden">
+          <label for="doc-upload-file" class="upload-label">
+            <span>Upload de documento para verificação</span>
+            <i data-lucide="upload" class="upload-icon"></i>
+          </label>
+        </div>
+
+        <!-- Botões Voltar e Próximo -->
+        <div class="form-button-group">
+          <button type="button" class="btn-step btn-secondary" onclick="navigateTo('nova-conta')">
+            Voltar
+          </button>
+          <button type="submit" class="btn-step btn-primary">
+            Próximo
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="cadastro-footer">
+      <button class="link-btn" onclick="navigateTo('login')">
+        Já tenho uma conta
+      </button>
+
+      <div class="cadastro-pattern bottom-pattern">
+        <img src="../img/detalhesInicial2.png" alt="Desenhos de patinhas e gatos" class="pattern-img">
+      </div>
+    </div>
+
+  </div>
+</section>

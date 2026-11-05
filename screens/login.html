@@ -1,0 +1,44 @@
+<section class="screen-content login-screen">
+  <div class="login-container">
+    
+    <div class="login-pattern top-pattern">
+      <img src="../img/detalhesInicial1.png" alt="Desenhos de patinhas e gatos" class="pattern-img">
+    </div>
+
+    <div class="login-center">
+      <div class="login-title-box">
+        <img src="../img/login.png" alt="LOGIN" class="login-title-img">
+      </div>
+
+      <form class="login-form" onsubmit="event.preventDefault(); navigateTo('perfil');">
+        <div class="input-group">
+          <input type="email" placeholder="E-mail" required class="form-input">
+        </div>
+        
+        <div class="input-group">
+          <input type="password" placeholder="Senha" required class="form-input">
+        </div>
+
+        <div class="form-links">
+          <button type="button" class="link-btn" onclick="navigateTo('nova-conta')">Criar nova conta</button>
+          <button type="button" class="link-btn" onclick="navigateTo('recuperar-senha')">Esqueceu a senha?</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="login-footer">
+      <button class="btn-login-entrar" onclick="navigateTo('home')">
+        Entrar
+      </button>
+
+      <p class="credits">
+        Criado por Juan Jacomassi, Karen Nanamy Kamo, Rebeca de Oliveira Silva e Sarah Meicy Machado Barbosa
+      </p>
+    </div>
+
+    <div class="login-pattern bottom-pattern">
+      <img src="../img/detalhesInicial2.png" alt="Desenhos de patinhas e gatos" class="pattern-img">
+    </div>
+
+  </div>
+</section>

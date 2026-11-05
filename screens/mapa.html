@@ -1,0 +1,44 @@
+<section class="screen-content mapa-screen">
+  <header class="mapa-header">
+    <button class="icon-btn" onclick="navigateTo('comunidade')">
+      <i data-lucide="arrow-left"></i>
+    </button>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i data-lucide="sliders-horizontal" class="search-filter-icon"></i>
+        <input type="text" placeholder="Buscar" class="search-input">
+      </div>
+      <button class="filter-btn" id="btn-toggle-map-filter" onclick="toggleMapFilterPanel()">
+        <i data-lucide="filter"></i>
+        <span id="map-filter-btn-text">Filtrar</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="map-filter-panel" id="map-filter-panel">
+    <div class="filter-options-grid">
+      <label class="checkbox-label"><input type="checkbox" id="chk-veterinario" onchange="applyMapFilters()"> Veterinário</label>
+      <label class="checkbox-label"><input type="checkbox" id="chk-banho"> Banho e tosa</label>
+      <label class="checkbox-label"><input type="checkbox" id="chk-banho"> Pet shop</label>
+      <label class="checkbox-label"><input type="checkbox" id="chk-banho"> ONG</label>
+      <label class="checkbox-label"><input type="checkbox" id="chk-banho"> Restaurantes pet friendly</label>
+
+      <button class="reset-filter-btn" onclick="resetMapFilters()" title="Limpar Filtros"><i data-lucide="rotate-ccw"></i></button>
+    </div>
+  </div>
+
+  <main class="map-viewport">
+    <div class="map-container">
+      <iframe
+        width="600"
+        height="450"
+        style="border:0;"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=veterin%C3%A1rio&output=embed">
+      </iframe>
+    </div>
+
+  </main>
+</section>

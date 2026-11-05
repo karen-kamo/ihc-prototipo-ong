@@ -1,0 +1,150 @@
+.mapa-screen {
+  background-color: #f7f4f2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mapa-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 16px 12px 16px;
+  background-color: #f7f4f2;
+}
+
+.mapa-header .icon-btn {
+  background: none;
+  border: none;
+  color: #5578c7; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mapa-header .icon-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.mapa-screen .search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #5578c7;
+  border-radius: 12px;
+  padding: 8px 12px;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+.mapa-screen .search-filter-icon {
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.mapa-screen .search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+}
+
+.mapa-screen .search-input::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.mapa-screen .filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #5578c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #5578c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.filter-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.map-filter-panel {
+  display: none;
+  background-color: #dedede;
+  margin: 0 16px 12px 16px;
+  border-radius: 16px;
+  padding: 14px 16px;
+  font-size: 13px;
+  color: #1a1a1a;
+}
+
+.map-filter-panel.open {
+  display: block;
+}
+
+.filter-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 10px 12px;
+  align-items: center;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.reset-filter-btn {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-viewport {
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+  overflow: hidden;
+  background-color: #e5ecf4;
+}

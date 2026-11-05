@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protótipo Laços de Pata</title>
+  
+  <!-- Apenas o CSS Global da moldura e estilos base -->
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Biblioteca de Ícones (Lucide Icons) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Container Único do Telemóvel -->
+<div class="mobile-frame">
+  <!-- O contêiner de telas via app.js -->
+  <div id="app"></div>
+
+  <!-- Toast Global de Sucesso -->
+  <div class="toast-success" id="post-success-toast">
+    Publicação realizada com sucesso
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL GLOBAL DE CRIAÇÃO DE PUBLICAÇÃO      -->
+  <!-- ========================================== -->
+  <div class="post-options-overlay" id="post-options-modal" onclick="closePostModal()">
+    <!-- Container dos Botões de Opção (impede fechar ao clicar nos botões) -->
+    <div class="post-options-container" onclick="event.stopPropagation()">
+      <button class="btn-post-option" onclick="selectPostType('comum')">
+        Publicação comum
+      </button>
+
+      <button class="btn-post-option" onclick="selectPostType('adocao')">
+        Anúncio de adoção
+      </button>
+
+      <button class="btn-post-option" onclick="selectPostType('evento')">
+        Anúncio de evento
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<!-- Script principal que carrega as telas e os CSSs dinamicamente -->
+<script src="app.js"></script>
+</body>
+</html>

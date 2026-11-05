@@ -1,0 +1,47 @@
+<section class="screen-content comunidade-screen">
+  
+  <div class="comunidade-content">
+    
+    <div class="search-bar">
+      <i data-lucide="sliders-horizontal" class="search-filter-icon"></i>
+      <input type="text" placeholder="Buscar" class="search-input">
+    </div>
+
+    <div class="banner-list">
+      <!-- Botão Adoção -> Vai para 'adocao' -->
+      <div class="banner-item" onclick="navigateTo('adocao')">
+        <img src="img/adocao.png" alt="Adoção" class="banner-img" />
+      </div>
+
+      <!-- Botão Eventos -> Vai para 'eventos' -->
+      <div class="banner-item" onclick="navigateTo('eventos')">
+        <img src="img/eventos.png" alt="Eventos" class="banner-img" />
+      </div>
+
+      <!-- Botão Mapa -> Vai para 'mapa' -->
+      <div class="banner-item" onclick="navigateTo('mapa')">
+        <img src="img/mapa.png" alt="Mapa" class="banner-img" />
+      </div>
+    </div>
+
+  </div>
+
+  <nav class="bottom-nav">
+    <button class="nav-item" onclick="navigateTo('home')">
+      <i data-lucide="home"></i>
+    </button>
+    <button class="nav-item active" onclick="navigateTo('comunidade')">
+      <i data-lucide="paw-print"></i>
+    </button>
+    <button class="nav-item btn-add" onclick="openPostModal()">
+      <i data-lucide="plus-circle"></i>
+    </button>
+    <button class="nav-item" onclick="navigateTo('mensagens')">
+      <i data-lucide="message-square"></i>
+    </button>
+    <button class="nav-item" onclick="navigateTo('meu-perfil')">
+      <i data-lucide="user"></i>
+    </button>
+  </nav>
+
+</section>
